@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 //JS Basics Parte 1:
 
@@ -99,12 +99,28 @@ const values = keys3.map((item2) => {
 });
 console.log(values);
 
+//JS Basics Parte 3:
+
+//destructuring assignament
+const object5 = {
+  Likes: "Pizza, Cakes, Sandwichs",
+  Dislikes: "Salad and fruits",
+};
+
+const keys4 = Object.keys(object5);
+const [i1, i2] = keys4;
+
+console.log("keys", keys);
+console.log(i1, i2);
+
 //map
 
 const Basics = () => {
   const names = ["Moisés", "Rodrigues Martins"];
   const birth = ["21", "09", "2003"];
   const birthDay = birth.map((day) => <p>{day}</p>);
+
+  const [counter, setCounter] = useState(0);
 
   return (
     <div className="Basics">
@@ -115,6 +131,8 @@ const Basics = () => {
       </div>
 
       <div>{birthDay}</div>
+
+      <div>{counter}</div>
     </div>
   );
 };
