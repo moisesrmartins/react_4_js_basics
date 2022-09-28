@@ -40,6 +40,21 @@ const a = "Moisés";
 const string = `Hello ${a}`;
 console.log(string);
 
+//object
+const object = {
+  Name: "Moisés",
+  LastName: "Rodrigues Martins",
+  Adress: {
+    Country: "Brazil",
+    State: "Minas Gerais",
+    City: "Araguari",
+  },
+};
+console.log(object.Name, object.LastName, object.Adress);
+
+const n = "Name";
+console.log(object[n]);
+
 function App() {
   return <div className="App"></div>;
 }
