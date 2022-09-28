@@ -56,10 +56,48 @@ const n = "Name";
 console.log(object[n]);
 
 //array
-
 const array = [1, 2, 3, "Hi"];
 console.log(array[0]);
 console.log(array[3]);
+
+//keys
+const object2 = {
+  Name: "Moisés",
+  LastName: "Rodrigues Martins",
+  Adress: {
+    Country: "Brazil",
+    State: "Minas Gerais",
+    City: "Araguari",
+  },
+};
+
+const keys = Object.keys(object2);
+console.log(keys);
+console.log(keys[0]);
+
+const object3 = {
+  Country: "Brazil",
+  State: "Minas Gerais",
+  City: "Araguari",
+};
+
+const keys2 = Object.keys(object3);
+keys2.forEach((item) => {
+  console.log(item);
+  console.log(object3[item]);
+});
+
+const object4 = {
+  Day: "21",
+  Month: "09",
+  Year: "2003",
+};
+
+const keys3 = Object.keys(object4);
+const values = keys3.map((item2) => {
+  return object4[item2];
+});
+console.log(values);
 
 function App() {
   return <div className="App"></div>;
