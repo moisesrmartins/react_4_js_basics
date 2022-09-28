@@ -99,8 +99,23 @@ const values = keys3.map((item2) => {
 });
 console.log(values);
 
-function App() {
-  return <div className="App"></div>;
-}
+//map
+const App = () => {
+  const names = ["Moisés", "Rodrigues Martins"];
+  const birth = ["21", "09", "2003"];
+  const birthDay = birth.map((day) => <p>{day}</p>);
+
+  return (
+    <div className="App">
+      <div>
+        {names.map((name) => (
+          <p>{name}</p>
+        ))}
+      </div>
+
+      <div>{birthDay}</div>
+    </div>
+  );
+};
 
 export default App;
