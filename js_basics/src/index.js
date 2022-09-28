@@ -39,3 +39,12 @@ const soma2 = function soma2(a, b) {
   return a + b;
 };
 console.log(soma2(1, 3));
+
+//function
+const funcSoma = soma;
+console.log(funcSoma(4, 5));
+
+console.log(soma(1, 2));
+function soma(c, d) {
+  return c + d;
+}
