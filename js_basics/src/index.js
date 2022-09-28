@@ -21,3 +21,12 @@ reportWebVitals();
 //var
 var variavel1 = 10;
 console.log(variavel1);
+
+//let
+let variavel2 = 10;
+console.log(variavel2);
+
+let variavel3 = 10;
+console.log(variavel3);
+variavel3 = variavel3 + 3;
+console.log(variavel3);
