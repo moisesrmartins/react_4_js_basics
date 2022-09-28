@@ -120,7 +120,7 @@ const Basics = () => {
   const birth = ["21", "09", "2003"];
   const birthDay = birth.map((day) => <p>{day}</p>);
 
-  const [counter, setCounter] = useState(0);
+  const [counter] = useState(0);
 
   return (
     <div className="Basics">
@@ -133,6 +133,10 @@ const Basics = () => {
       <div>{birthDay}</div>
 
       <div>{counter}</div>
+
+      <div>
+        <h1>END</h1>
+      </div>
     </div>
   );
 };
