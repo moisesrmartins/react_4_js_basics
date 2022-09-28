@@ -32,3 +32,16 @@ console.log(soma(1, 2));
 function soma(c, d) {
   return c + d;
 }
+
+//JS Basics Parte 2:
+
+//string
+const a = "Moisés";
+const string = `Hello ${a}`;
+console.log(string);
+
+function App() {
+  return <div className="App"></div>;
+}
+
+export default App;
