@@ -15,3 +15,9 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+//JS Basics Parte 1:
+
+//var
+var variavel1 = 10;
+console.log(variavel1);
