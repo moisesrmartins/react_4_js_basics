@@ -30,3 +30,12 @@ let variavel3 = 10;
 console.log(variavel3);
 variavel3 = variavel3 + 3;
 console.log(variavel3);
+
+//const
+const variavel4 = 10;
+console.log(variavel4);
+
+const soma2 = function soma2(a, b) {
+  return a + b;
+};
+console.log(soma2(1, 3));
