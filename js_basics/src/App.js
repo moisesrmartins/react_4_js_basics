@@ -55,6 +55,12 @@ console.log(object.Name, object.LastName, object.Adress);
 const n = "Name";
 console.log(object[n]);
 
+//array
+
+const array = [1, 2, 3, "Hi"];
+console.log(array[0]);
+console.log(array[3]);
+
 function App() {
   return <div className="App"></div>;
 }
