@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./Header";
+import Table from "./Create/Element/Table.js";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
 
       <div>
         <Header />
+        <Table />
       </div>
     </div>
   );
