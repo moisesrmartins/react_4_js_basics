@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 class Components2 extends React.Component {
   render() {
@@ -27,12 +27,26 @@ class Components4 extends React.Component {
   }
 }
 
+const Components5 = () => {
+  const [counter, setCounter] = useState(0);
+  const Increment = () => {
+    setCounter(counter + 2);
+  };
+  return (
+    <p>
+      Component Counter 2: {counter}
+      <button onClick={Increment}>Add-2</button>
+    </p>
+  );
+};
+
 function Components() {
   return (
     <div className="Components">
       <Components2 />
       <Components3 />
       <Components4 />
+      <Components5 />
     </div>
   );
 }
